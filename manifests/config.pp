@@ -6,7 +6,7 @@ class denyhosts::config {
     mode    => '0440',
     require => Class[denyhosts::install],
     notify  => Class[denyhosts::service],
-    content => template('/etc/puppet/modules/denyhosts/templates/denyhosts.conf'),
+    content => template('denyhosts/denyhosts.conf.erb'),
   }
 
 }

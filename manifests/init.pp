@@ -28,7 +28,7 @@
 class denyhosts (
 
   # Set default variables, override via heira.
-  $config_ADMIN_EMAIL                          = 'hosting@alpha-labs.net',
+  $config_ADMIN_EMAIL                          = 'root@localhost',
   $config_BLOCK_SERVICE                        = 'sshd',
   $config_DAEMON_LOG                           = '/var/log/denyhosts',
   $config_DAEMON_PURGE                         = '1h',
@@ -44,7 +44,7 @@ class denyhosts (
   $config_SYNC_INTERVAL                        = '1h',
   $config_SYNC_SERVER                          = 'http://xmlrpc.denyhosts.net:9911',
   $config_SYNC_UPLOAD                          = 'no',
-  $config_SYSLOG_REPORT                        = 'YES',
+  $config_SYSLOG_REPORT                        = 'yes',
   $config_file                                 = '/etc/denyhosts.conf',
   $ensure                                      = 'running',
 
