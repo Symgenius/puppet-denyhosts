@@ -1,0 +1,14 @@
+#
+#  _                                _     _
+# | |  _ __  _   _ _ __  _ __   ___| |_  | |
+# | | | '_ \| | | | '_ \| '_ \ / _ \ __| | |
+# |_| | |_) | |_| | |_) | |_) |  __/ |_  |_|
+# (_) | .__/ \__,_| .__/| .__/ \___|\__| (_)
+#     |_|         |_|   |_|
+#
+# Served by:        '<%= scope.lookupvar('::servername') %>'
+# Module:           '<%= scope.to_hash['module_name'] %>'
+<%
+  module_paths = Puppet::Node::Environment.current[:modulepath].split(':').map{|i| File.expand_path(i) }.join('|')
+%># Template source:  '~modules<%= template_source.gsub(Regexp.new("^#{module_paths}"),"") %>'
+

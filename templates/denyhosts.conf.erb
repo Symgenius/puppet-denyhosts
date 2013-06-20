@@ -1,14 +1,4 @@
-#
-#  _                                _     _
-# | |  _ __  _   _ _ __  _ __   ___| |_  | |
-# | | | '_ \| | | | '_ \| '_ \ / _ \ __| | |
-# |_| | |_) | |_| | |_) | |_) |  __/ |_  |_|
-# (_) | .__/ \__,_| .__/| .__/ \___|\__| (_)
-#     |_|         |_|   |_|
-#
-       ############ THESE SETTINGS ARE REQUIRED ############
-
-########################################################################
+<%= ERB.new(File.read(File.expand_path("_header.erb",File.dirname(file)))).result(binding) -%>
 #
 # SECURE_LOG: the log file that contains sshd logging info
 # if you are not sure, grep "sshd:" /var/log/*
