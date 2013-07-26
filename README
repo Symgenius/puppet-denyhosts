@@ -1,10 +1,12 @@
 denyhosts
 
 This is the denyhosts module.
+It was written for RHEL/CentOS but we try to make Debian work as well.
 
 License
 -------
 
+MIT
 
 Contact
 -------
@@ -13,4 +15,4 @@ Alexander Bien <abien@gmx.net>
 Support
 -------
 
-Please log tickets and issues at our [Projects site](http://projects.example.com)
+via GitHub

@@ -19,6 +19,7 @@
 #
 # === Authors
 #
+# Christian Reiß
 # Alexander Bien <abien@gmx.net>
 #
 # === Copyright
